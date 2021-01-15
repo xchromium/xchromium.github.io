@@ -1,1 +1,40 @@
-theme: jekyll-theme-architect
+# theme: jekyll-theme-architect
+# Dependencies
+markdown:         kramdown
+kramdown:
+  extensions: ["tables"]
+
+highlighter:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            XChromium
+tagline:          'Chromium Base'
+# url:              http://xchromium.github.io
+# shorturl:         joshualande.com
+
+author:
+  name:           'GENi05'
+  url:            https://play.google.com/store/apps/developer?id=GENi05&hl=en_ZA&gl=US
+
+paginate:         1
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           github.com/xchromium/xchromium.github.io
+
+# This is the list of pages to include in the header of the website.
+pages_list:       
+  About: '/about/'
+  Archive: '/archive/'
+  Feed: '/atom.xml'
+
+# Allow URL Redirects: 
+#  * https://help.github.com/articles/redirects-on-github-pages
+gems:
+  - jekyll-redirect-from
+  - jekyll-paginate
