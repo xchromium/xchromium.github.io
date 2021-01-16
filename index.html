@@ -51,6 +51,23 @@
 	  return 'Dialog text here.';
 	};
 	</script>
+	
+	<script type='text/javascript'>
+function goodbye(e) {
+    if(!e) e = window.event;
+    //e.cancelBubble is supported by IE - this will kill the bubbling process.
+    e.cancelBubble = true;
+    e.returnValue = 'You sure you want to leave?'; //This is displayed on the dialog
+
+    //e.stopPropagation works in Firefox.
+    if (e.stopPropagation) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+}
+window.onbeforeunload=goodbye; 
+
+</script>
 </head>
 <body onUnLoad='alert("Please do not leave!")'>
 <!-- <body> -->
@@ -68,7 +85,7 @@
 
 <div class="container">
 
-    <p>Lorem7, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
+    <p>Lorem8, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
         reiciendis laboriosam libero illo quisquam. Mollitia dolorem consequatur accusantium, quam minima voluptates
         tempore eaque vero magnam commodi! Odio sit distinctio quaerat dolorem nesciunt voluptatem, pariatur id nobis
         natus illum, consectetur aut sed dolores molestias.</p>
