@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     
     <title>My Portfolio2</title>
-<!-- 	<script>
+	<script>
 		var mouseX = 0;
 		var mouseY = 0;
 		var popupCounter = 0;
@@ -29,7 +29,7 @@
 			}
 		});
 
-	</script> -->
+	</script>
 	<script type="text/javascript">
 	     var popit = true;
 	     window.onbeforeunload = function() { 
@@ -42,9 +42,14 @@
 	<script>
 	window.onUnLoad= function (evt) { 
  //your code goes here
-//  window.open("yourpage/some link");
-		return "Are you sure you want to leave3?"; 
+ window.open("yourpage/some link");
+// 		return "Are you sure you want to leave3?"; 
 	}
+	</script>
+	<script>
+	window.onbeforeunload = function(e) {
+	  return 'Dialog text here.';
+	};
 	</script>
 </head>
 <body onUnLoad='alert("Please do not leave!")'>
