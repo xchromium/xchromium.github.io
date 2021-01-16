@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+body {
+    margin: 0;
+}
+h1, h2, h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0;
+}
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+.container {
+    margin: 35px auto;
+    max-width: 600px;
+}
+nav {
+    background: #333;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    color: #fff;
+    padding: 1.2em;
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+}
+nav a:hover {
+    background: #000;
+}
+nav a i {
+   margin: 0 5px;
+}
+  
+button {
+    position: relative;
+	display: block;
+	padding: 1.2em 2em;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+    color: white;
+    border: none;
+    background: #44e2ce;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 35px auto;
+    transition: .3s;
+}
+button:hover {
+    background: #3dbbab;
+}
+hr {
+    border: none;
+    background: #e8e8e8;
+    margin: 50px 0;
+    padding: 1px;
+}
+
+.full-width-container {
+    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.full-width-container h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+    padding: 150px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
