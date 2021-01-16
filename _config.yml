@@ -4,7 +4,7 @@ markdown:         kramdown
 kramdown:
   extensions: ["tables"]
 
-highlighter:         true
+highlighter:         'rouge'
 
 # Permalinks
 permalink:        pretty
@@ -13,7 +13,7 @@ permalink:        pretty
 title:            XChromium
 tagline:          'Chromium Base'
 # url:              http://xchromium.github.io
-# shorturl:         joshualande.com
+# shorturl:         
 
 author:
   name:           'GENi05'
