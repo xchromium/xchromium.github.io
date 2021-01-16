@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/minified/introjs.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.css">
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    
+    <title>My Portfolio2</title>
+	<script>
+		var mouseX = 0;
+		var mouseY = 0;
+		var popupCounter = 0;
+
+		document.addEventListener("mousemove", function(e) {
+			mouseX = e.clientX;
+			mouseY = e.clientY;
+			document.getElementById("coordinates").innerHTML = "<br />X: " + e.clientX + "px<br />Y: " + e.clientY + "px";
+		});
+
+		$(document).mouseleave(function () {
+			if (mouseY < 100) {
+				if (popupCounter < 1) {
+					alert("Please do not close the tab!");
+				}
+				popupCounter ++;
+			}
+		});
+
+	</script>
 </head>
 <body>
 
