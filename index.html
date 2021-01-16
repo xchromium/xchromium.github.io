@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     
     <title>My Portfolio2</title>
-	<script>
+<!-- 	<script>
 		var mouseX = 0;
 		var mouseY = 0;
 		var popupCounter = 0;
@@ -29,6 +29,15 @@
 			}
 		});
 
+	</script> -->
+	<script type="text/javascript">
+	     var popit = true;
+	     window.onbeforeunload = function() { 
+		  if(popit == true) {
+		       popit = false;
+		       return "Are you sure you want to leave?"; 
+		  }
+	     }
 	</script>
 </head>
 <body>
@@ -46,7 +55,7 @@
 
 <div class="container">
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
+    <p>Lorem3, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
         reiciendis laboriosam libero illo quisquam. Mollitia dolorem consequatur accusantium, quam minima voluptates
         tempore eaque vero magnam commodi! Odio sit distinctio quaerat dolorem nesciunt voluptatem, pariatur id nobis
         natus illum, consectetur aut sed dolores molestias.</p>
@@ -57,7 +66,7 @@
 
 <div class="container">
 
-    <p>Lorem2, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
         reiciendis laboriosam libero illo quisquam.</p>
 
     <hr>
