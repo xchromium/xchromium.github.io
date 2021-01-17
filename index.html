@@ -1,4 +1,23 @@
 <!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the HTML DOM to assign an "onbeforeunload" event to the window object.</p>
+
+<p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
+
+<a href="../index.html">Click here to go to w3schools.com</a>
+
+<script>
+window.onbeforeunload = function(event) {
+    event.returnValue = "Write something clever here..";
+};
+</script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<script>
@@ -158,3 +177,4 @@ window.onbeforeunload = function (e) {
 <script src="main.js"></script>
 </body>
 </html>
+ -->
