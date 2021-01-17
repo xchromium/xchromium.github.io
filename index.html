@@ -2,19 +2,29 @@
 <html>
 <!-- <body onbeforeunload="alert('function alrt WORKS !!!!')"> -->
 <body>
-<p>This5 example uses the HTML DOM to assign an "onbeforeunload" event to the window object.</p>
+<p>This6 example uses the HTML DOM to assign an "onbeforeunload" event to the window object.</p>
 
 <p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
 
 <a href="../index.html">Click here to go to w3schools.com</a>
-
+<script>
+    window.onbeforeunload = function(e) {
+      return 'Are you sure you want to leave this page?  You will lose any unsaved data.';
+    };
+</script>
+	<script>
+    window.onbeforeunload = function(e) {
+       callSomeFunction();
+       return null;
+    };
+</script>
 <script>
 	
-	window.addEventListener("beforeunload", function (e) {
-  saveFormData();
+// 	window.addEventListener("beforeunload", function (e) {
+//   saveFormData();
 
-  (e || window.event).returnValue = null;
-  return null;
+//   (e || window.event).returnValue = null;
+//   return null;
 });
 // 	window.onbeforeunload = function() {
 //     saveFormData();
