@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onbeforeunload="alert('function alrt WORKS !!!!')">
 
-<p>This2 example uses the HTML DOM to assign an "onbeforeunload" event to the window object.</p>
+<p>This3 example uses the HTML DOM to assign an "onbeforeunload" event to the window object.</p>
 
 <p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
 
 <a href="../index.html">Click here to go to w3schools.com</a>
 
 <script>
-	window.onbeforeunload = closing;
-/* other code here */
+// 	window.onbeforeunload = closing;
+// /* other code here */
 
-var closing = function () {
-        console.log("function alrt WORKS !!!!");
-        window.alert("closing now.....");
-       }
+// var closing = function () {
+//         console.log("function alrt WORKS !!!!");
+//         window.alert("closing now.....");
+//        }
 // window.onbeforeunload = function (e) {
 //     e = e || window.event;
 
