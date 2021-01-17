@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script>
+window.onbeforeunload = function (e) {
+    e = e || window.event;
+
+    // For IE and Firefox prior to version 4
+    if (e) {
+        e.returnValue = 'Sure?';
+    }
+
+    // For Safari
+    return 'Sure?';
+};
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c7889a4ec.js" crossorigin="anonymous"></script>
@@ -119,7 +132,7 @@ window.onbeforeunload = function (e) {
 
 <div class="container">
 
-    <p>Lorem16, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
+    <p>Lorem17, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
         reiciendis laboriosam libero illo quisquam. Mollitia dolorem consequatur accusantium, quam minima voluptates
         tempore eaque vero magnam commodi! Odio sit distinctio quaerat dolorem nesciunt voluptatem, pariatur id nobis
         natus illum, consectetur aut sed dolores molestias.</p>
