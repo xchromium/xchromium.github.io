@@ -1,57 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3c7889a4ec.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/minified/introjs.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/themes/introjs-modern.css">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+<title>Refresh a page in jQuery</title>
+ 
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+ 
 </head>
+
 <body>
-    <script>
-	window.onload = function(){
-https://script.google.com/macros/s/AKfycbzfNNIBDMRFyla_nNFPqhPI829VBJDMMCqDGmHAaE3OqlBXoSi3VRKVRg/exec
-}
-    </script>
 
-    <nav>
-        <ul>
-            <li><a id="step-two" href="index.html"> Home</a></li>
-            <li><a id="step-two" href="contact.html"><i class="fas fa-user-circle"></i> Contact Me</a></li>
-        </ul>
-    </nav>
+<h1>Stop a page from exit with jQuery</h1>
 
-    <div class="full-width-container">
-        <h2>My Portfolio</h2>
-    </div>
+<button id="reload">Refresh a Page in jQuery</button>
+ 
+<script type="text/javascript">
+ 
+    $('#reload').click(function() {
+ 
+     	location.reload();
+ 
+    });
+    
+    $(window).bind('beforeunload', function(){
+        return '>>>>>Before You Go<<<<<<<< \n Your custom message go here';
+    });
 
-<div class="container">
+</script>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
-        reiciendis laboriosam libero illo quisquam. Mollitia dolorem consequatur accusantium, quam minima voluptates
-        tempore eaque vero magnam commodi! Odio sit distinctio quaerat dolorem nesciunt voluptatem, pariatur id nobis
-        natus illum, consectetur aut sed dolores molestias.</p>
-
-</div>
-
-
-
-<div class="container">
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis, modi impedit, aut earum, animi saepe
-        reiciendis laboriosam libero illo quisquam.</p>
-
-    <hr>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum quis ipsam, assumenda incidunt tempore voluptatum, ab accusantium nobis animi necessitatibus? Dolorum animi eos minus accusamus corrupti, magnam facilis quae reiciendis magni illum inventore culpa excepturi! Dignissimos nesciunt ullam vel commodi perferendis, id iste nemo explicabo incidunt, doloribus aliquam animi temporibus obcaecati adipisci tenetur. Nam optio labore illo dolorem modi quia incidunt, maiores repudiandae numquam debitis, id, ad a fugiat. Ducimus iure accusantium sapiente fugiat, earum cum, sequi rerum autem eum tempore natus voluptatibus similique esse laudantium dolor facere perspiciatis, non magni. Commodi ipsam sequi nisi accusantium repellat tempora esse?</p>
-
-</div>
-
-<button class="contact">Contact Me</button>
-
-
-<script src="main.js"></script>
 </body>
 </html>
